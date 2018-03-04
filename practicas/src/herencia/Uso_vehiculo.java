@@ -12,7 +12,6 @@ public class Uso_vehiculo {
 		
 		miFurgoneta1.setColor("Azul");
 		
-		miFurgoneta1.
 		
 		
 		
