@@ -13,6 +13,7 @@ public class EscrituraPasoAPaso {
 		 *  para tener más control, por ejemplo para saber si el archivo existe.*/
 		File miArchivo = new File("/home/ogalvez/git_projects/archivos/estudiantes.txt");
 		//comprobamos que el archivo existe y el path es correcto, si es asi, devuelve un true
+		//la primera vez sale false, la segunda al estar ya creado cambia a true.
 		System.out.println(miArchivo.exists());
 		
 		/*Abrir el flujo para esto se debe crear un objeto de tipo FileReader para leer 
