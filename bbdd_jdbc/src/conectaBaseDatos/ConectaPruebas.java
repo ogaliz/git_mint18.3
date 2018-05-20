@@ -15,18 +15,18 @@ public class ConectaPruebas {
 		try {
 			
 			//1. tenemos que crear un objeto de tipo connection
-			Connection miConexion = DriverManager.getConnection("jdbc:mysql://localhost:3308/jardineria","root","");
+			Connection miConexion = DriverManager.getConnection("jdbc:mysql://localhost:3308/jardineria?autoReconnect=true&useSSL=false","root","");
 			
 			//2. Crear objeto Statement, a través del objeto Conexion. 
 			Statement miStatement = miConexion.createStatement();
 			
 			//3. Ejecutamos la query SQL, para ello necesitamos el objeto Statement, esto nos guarda
 			// una tabla virtual a modo de resultado que tenemos que recorrer.
-			ResultSet miResultset = miStatement.executeQuery("SELECT Nombre, Proveedor FROM Productos");
+			ResultSet miResultset = miStatement.executeQuery("SELECT Nombre, Proveedor FROM Productos limit 5");
 			
 			//4. Leer la informacion de la tabla que nos ha devuelto la consulta SQL.
 			while(miResultset.next()) {
-				//podemos utilizar el nombre o el indice del campo
+				//podemos utilizar el nombre o la posicion de la columna por ej -> .getString(2)
 				System.out.println(miResultset.getString("Nombre")+" - "+miResultset.getString("Proveedor"));
 				
 			}
