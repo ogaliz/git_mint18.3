@@ -12,6 +12,7 @@ public class EscrituraPasoAPaso {
 		/*Crear el un objeto de tipo File, no es obligatorio pero es una buena recomendación
 		 *  para tener más control, por ejemplo para saber si el archivo existe.*/
 		File miArchivo = new File("/home/ogalvez/git_projects/archivos/estudiantes.txt");
+		
 		//comprobamos que el archivo existe y el path es correcto, si es asi, devuelve un true
 		//la primera vez sale false, la segunda al estar ya creado cambia a true.
 		System.out.println(miArchivo.exists());

@@ -65,7 +65,7 @@ public class pruebaBasica {
     public static void main(String[] args) {
         //creamos un objeto de tipo File, esto no es necesario para crear un doc, lo podemos crear con
         //FileWriter, pero nos ofrece unos metodos útiles extras. 
-        File documento = new File("C:\\archivos\\final123.txt");
+        File documento = new File("final123.txt");
         
         System.out.println(documento.getAbsolutePath());
         
