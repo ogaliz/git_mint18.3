@@ -6,7 +6,7 @@ import java.sql.*;
  * 1.Primero, crear un objeto de tipo conexión
  * 2.Crear un objeto de tipo Statement (esto nos permite empezar a ejecutar sentencias SQL.)
  * 3.Ejecutar sentencia SQL. 
- * 4.Lee el resultado 
+ * 4.Lee el resultado (resultset) 
  * */
 public class ConectaPruebas {
 
@@ -15,7 +15,7 @@ public class ConectaPruebas {
 		try {
 			
 			//1. tenemos que crear un objeto de tipo connection
-			Connection miConexion = DriverManager.getConnection("jdbc:mysql://localhost:3308/jardineria?autoReconnect=true&useSSL=false","root","");
+			Connection miConexion = DriverManager.getConnection("jdbc:mysql://localhost:3308/jardineria","root","");
 			
 			//2. Crear objeto Statement, a través del objeto Conexion. 
 			Statement miStatement = miConexion.createStatement();

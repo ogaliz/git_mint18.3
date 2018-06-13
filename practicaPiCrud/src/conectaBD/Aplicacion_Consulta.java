@@ -1,4 +1,4 @@
-package conectaBD;
+	package conectaBD;
 
 import javax.swing.*;
 import java.awt.*;
@@ -87,15 +87,15 @@ class Marco_Aplicacion extends JFrame{
 			
 			//CARGAMOS AHORA LOS REGISTROS AL OTRO JCOMBOBOX
 			
-//			consulta = "select distinct Pais from Clientes";
-//						
-//			rs = sentencia.executeQuery(consulta);
-//					
-//			while (rs.next()) {
-//				
-//				paises.addItem(rs.getString(1));
-//			}
-//			rs.close();
+			consulta = "select distinct Pais from Clientes";
+						
+			rs = sentencia.executeQuery(consulta);
+					
+			while (rs.next()) {
+				
+				paises.addItem(rs.getString(1));
+			}
+			rs.close();
 			
 		}catch(Exception e){
 			
