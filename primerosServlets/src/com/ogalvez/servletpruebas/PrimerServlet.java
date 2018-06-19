@@ -31,7 +31,7 @@ public class PrimerServlet extends HttpServlet {
 		salida.println("<html><body>");
 		salida.println("<h1>Prueba Servlet</h1>");
 		salida.println("");
-		salida.println("<p>De papichuleo</p>");
+		salida.println("<p>Conexión realizada con éxito!</p>");
 		salida.println("");
 		salida.println("");
 		salida.println("</body></html>");
